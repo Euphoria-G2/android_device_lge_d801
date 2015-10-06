@@ -1,15 +1,12 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/eos/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/d801/d801.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d801
-PRODUCT_NAME := cm_d801
+PRODUCT_NAME := eos_d801
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D801
 PRODUCT_MANUFACTURER := lge
